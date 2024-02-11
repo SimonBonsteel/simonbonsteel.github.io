@@ -1,0 +1,176 @@
+ 
+@font-face {
+    font-family: Trip-sans;
+    src: url(assets/TripSans-Regular.ttf);
+}
+
+
+
+:root {
+    --page-bg: #1e1e1e;
+    --page-txt: #ffffff;
+    --jobtitle-txt: #ececec;
+    --scrollbar-thumb: #b1b1b1;
+    --scrollbar-bg: #ececec;
+}
+
+
+
+
+/*     ____    ____  ______      __  ___  ___      ____  _   __ 
+      / __ )  /  _/ / ____/     /  |/  / /   |    /  _/ / | / /
+     / __  |  / /  / / __      / /|_/ / / /| |    / /  /  |/ /
+    / /_/ / _/ /  / /_/ /     / /  / / / ___ |  _/ /  / /|  /
+   /_____/ /___/  \____/     /_/  /_/ /_/  |_| /___/ /_/ |_/
+big main */
+
+body, html {
+    font-family: Heebo;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    cursor: default;
+    width: 100vw;
+    min-width: 100vw;
+    background-color: var(--page-bg);
+    color: var(--page-txt);
+}
+
+p, h1, h2, h3, h4, h5, h6, span {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.disable {
+    /* nft websites can't figure this out when it took me a quick google search */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.deactivate {
+    pointer-events: none;
+}
+.activate {
+    pointer-events: all;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: overlay;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 5;
+    scrollbar-gutter: none;
+}
+main div {
+    width: 100vw;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+a {
+    color: var(--page-main);
+}
+
+.push {
+    margin-left: auto;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+/*     _____   ______  ____    ____    __      __      ____    ___      ____   
+      / ___/  / ____/ / __ \  / __ \  / /     / /     / __ )  /   |    / __ \ 
+      \__ \  / /     / /_/ / / / / / / /     / /     / __  | / /| |   / /_/ /
+     ___/ / / /___  / _, _/ / /_/ / / /___  / /___  / /_/ / / ___ |  / _, _/
+    /____/  \____/ /_/ |_|  \____/ /_____/ /_____/ /_____/ /_/  |_| /_/ |_|
+scrollbar*/
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-corner {
+    background: var(--page-bg);
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--page-bg);
+  }
+
+
+/*haha i stole this code from the dogecoin website*/
+
+/*     __  ___  ___      ____  _   __      ____    ____  ______ 
+      /  |/  / /   |    /  _/ / | / /     / __ )  /  _/ /_  __/
+     / /|_/ / / /| |    / /  /  |/ /     / __  |  / /    / /  
+    / /  / / / ___ |  _/ /  / /|  /     / /_/ / _/ /    / /  
+   /_/  /_/ /_/  |_| /___/ /_/ |_/     /_____/ /___/   /_/  
+main bit*/
+
+.big-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;;
+    left: 0px;
+    background-image: url("assets/background/_1230004.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.title-area {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.namething {
+    padding-top: 40vh;
+    font-size: 1.5em;
+}
+
+.title-area h1 {
+    color: var(--page-txt);
+    text-shadow: 0px 0px 5px var(--page-bg);
+    font-size: 2.75em;
+}
+
+.title-area .jobtitle {
+    color: var(--jobtitle-txt);
+    text-shadow: 0px 0px 5px var(--page-bg);
+}
+
+.bio {
+    background-color: var(--page-bg);
+    text-align: center;
+}
+
+.bio img {
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    padding: 3em;
+    user-select: none;
+}
+
+.bio h2 {
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
