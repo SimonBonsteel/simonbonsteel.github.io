@@ -12,6 +12,7 @@
     --jobtitle-txt: #ececec;
     --scrollbar-thumb: #b1b1b1;
     --scrollbar-bg: #ececec;
+    --divider-bg: #333333;
 }
 
 
@@ -159,6 +160,7 @@ main bit*/
 .bio {
     background-color: var(--page-bg);
     text-align: center;
+    padding-bottom: 2em;
 }
 
 .bio img {
@@ -173,4 +175,31 @@ main bit*/
     max-width: 60vw;
     margin-left: auto;
     margin-right: auto;
+}
+
+.divider {
+    width: 100%;
+    height: 0px;
+    border-top: 1px solid var(--divider-bg);
+}
+
+.sneakpeek {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: var(--page-bg);
+    text-align: center;
+}
+
+.sneakpeek .photos-show {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photos-show img {
+    max-width: 40em;
+    user-select: none;
 }
