@@ -7,12 +7,17 @@
 
 
 :root {
-    --page-bg: #1e1e1e;
-    --page-txt: #ffffff;
+    --page-bg: #081526;
+    --page-txt: #e8f0fa;
     --jobtitle-txt: #ececec;
     --scrollbar-thumb: #b1b1b1;
     --scrollbar-bg: #ececec;
-    --divider-bg: #333333;
+    --divider-bg: #15273d;
+    --adobe-1: #081526;
+    --adobe-2: #DB3A61;
+    --adobe-3: #04bfbf;
+    --adobe-4: #f2dfbb;
+    --adobe-5: #bf6e50;
 }
 
 
@@ -197,9 +202,41 @@ main bit*/
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .photos-show img {
-    max-width: 40em;
+    max-width: 80vw;
+    width: 40em;
     user-select: none;
+}
+
+.collections-taste {
+    background-color: var(--page-bg);
+    text-align: center;
+}
+
+.collections-taste h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.collections-tase .list {
+    display: flex;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collections-tase .list .card {
+    position: relative;
+    width: 40em;
+    height: 30em;
+}
+
+.list .card img {
+    width: 40em;
+}
+.list .card h2 {
+    font-size: 1.75em;
 }
