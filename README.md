@@ -1,2 +1,2 @@
-# doestudios.digital
+# simonbonsteel.com
  portfolio site for simon
