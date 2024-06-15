@@ -78,7 +78,7 @@ main {
     overflow: overlay;
     overflow-x: hidden;
     position: relative;
-    z-index: 5;
+    z-index: 500;
     scrollbar-gutter: none;
 }
 main div {
@@ -117,20 +117,35 @@ scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
+    z-index: 1000;
   }
   ::-webkit-scrollbar-thumb {
     background: var(--scrollbar-thumb);
     border-radius: 5px;
   }
   ::-webkit-scrollbar-corner {
-    background: var(--page-bg);
+    /* background: var(--page-bg); */
+    background: transparent;
   }
   ::-webkit-scrollbar-track {
-    background: var(--page-bg);
+    /* background: var(--page-bg); */
+    background: transparent;
   }
-
-
 /*haha i stole this code from the dogecoin website*/
+
+.scrollbar-background {
+    position: fixed;
+}
+
+.scrollbar-background .sc-bio {
+    position: fixed;
+    width: 20px;
+    height: 100vh;
+    z-index: -10;
+    background-color: var(--page-bg);
+    top: 100vw;
+    right: 0px;
+}
 
 /*     __  ___  ___      ____  _   __      ____    ____  ______ 
       /  |/  / /   |    /  _/ / | / /     / __ )  /  _/ /_  __/
@@ -148,6 +163,7 @@ main bit*/
     background-image: url("assets/background/_1230004.jpg");
     background-size: cover;
     background-position: center;
+    z-index: 0;
 }
 
 .title-area {
@@ -260,7 +276,10 @@ main bit*/
 
 .collection-window .list {
     width: 100%;
+    max-height: calc(100% - 5.5em);
 }
+
+/* .collection-window */
 
 .collection-window .list .card:hover {
     background-color: var(--photo-card-hover);
@@ -276,6 +295,26 @@ main bit*/
 }
 .list .card h2 {
     font-size: 1.75em;
+}
+
+.list .card.video {
+    padding-bottom: 18px;
+}
+
+.list .card.video .img-wrapper {
+    background-size: cover;
+    width: 40em;
+    height: 26.64em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.list .card.video img.play {
+    width: 5em;
+    height: 5em;
+    border-radius: 0px;
+    user-select: none;
 }
 
 .x {
@@ -316,7 +355,9 @@ main bit*/
     padding: 20px;
     border-radius: 20px;
     text-align: center;
+    overflow: hidden;
 }
+
 
 .photo-preview {
     position: fixed;
@@ -334,6 +375,13 @@ main bit*/
 .photo-preview img {
     max-width: 80vw;
     max-height: 80vh;
+}
+
+.photo-preview iframe {
+    max-width: 80vw;
+    max-height: 80vh;
+    height: 100vh;
+    width: 100vw;
 }
 
 .photo-preview h1 {
