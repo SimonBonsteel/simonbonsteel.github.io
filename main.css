@@ -1,9 +1,13 @@
  
 @font-face {
-    font-family: Trip-sans;
+    font-family: TRIPSANS;
+    src: url(assets/TripSans-Bold.ttf);
+}
+ 
+@font-face {
+    font-family: TRIPSANSREG;
     src: url(assets/TripSans-Regular.ttf);
 }
-
 
 
 :root {
@@ -12,6 +16,7 @@
     --footer-bg: #0f233d;
     --jobtitle-txt: #ececec;
     --scrollbar-thumb: #b1b1b1;
+    --scrollbar-thumb-light: #ffffff;
     --scrollbar-bg: #ececec;
     --divider-bg: #15273d;
     --adobe-1: #081526;
@@ -37,7 +42,7 @@
 big main */
 
 body, html {
-    font-family: Heebo;
+    font-family: TRIPSANS;
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -133,6 +138,10 @@ scrollbar*/
   }
 /*haha i stole this code from the dogecoin website*/
 
+.collection-window ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-light);
+}
+
 .scrollbar-background {
     position: fixed;
 }
@@ -160,7 +169,7 @@ main bit*/
     height: 100vh;
     top: 0px;;
     left: 0px;
-    background-image: url("assets/background/_1230004.jpg");
+    background-image: url("assets/photos/_1230004.jpg");
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -276,7 +285,8 @@ main bit*/
 
 .collection-window .list {
     width: 100%;
-    max-height: calc(100% - 5.5em);
+    max-height: calc(100% - 3em);
+    margin-top: 10px;
 }
 
 /* .collection-window */
@@ -292,6 +302,10 @@ main bit*/
 .list .card img {
     width: 40em;
     border-radius: 10px;
+}
+
+.list .card.image img {
+    margin-top: 7.5px;
 }
 .list .card h2 {
     font-size: 1.75em;
@@ -309,6 +323,7 @@ main bit*/
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    margin-top: 7.5px;
 }
 .list .card.video img.play {
     width: 5em;
@@ -344,7 +359,7 @@ main bit*/
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(assets/background/_1230004.jpg);
+    background-image: url(assets/photos/_1230004.jpg);
     background-size: cover;
 }
 
@@ -357,6 +372,7 @@ main bit*/
     text-align: center;
     overflow: hidden;
 }
+
 
 
 .photo-preview {
@@ -402,6 +418,11 @@ main bit*/
     text-align: center;
     bottom: 1em;
     text-wrap: wrap;
+}
+
+.disable-scrolling {
+    /* height: 100%; */
+    overflow: hidden;
 }
 
 /*     ______  ____    ____    ______  ______  ____   
