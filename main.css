@@ -169,7 +169,7 @@ main bit*/
     height: 100vh;
     top: 0px;;
     left: 0px;
-    background-image: url("assets/photos/_1230004.jpg");
+    background-image: url("assets/photos/1230004.jpg");
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -359,7 +359,7 @@ main bit*/
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(assets/photos/_1230004.jpg);
+    background-image: url(assets/photos/1230004.jpg);
     background-size: cover;
 }
 
