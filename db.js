@@ -12,13 +12,13 @@ var db = {
                 {
                     "title": "hdksjugfbdxhjkgbld",
                     "description": "the planes be flying",
-                    "src": "assets/photos/_1230004.jpg",
+                    "src": "assets/photos/1230004.jpg",
                     "youtube": false
                 },
                 {
                     "title": "hdksjugfbdxhjkgbld",
                     "description": "the planes be flying",
-                    "src": "assets/photos/_1370407.jpg",
+                    "src": "assets/photos/1370407.jpg",
                     "youtube": "C0cCKmCj8ew"
                 }   
 
@@ -31,7 +31,7 @@ var db = {
             "youtube": "https://www.youtube.com/watch?v=jzdkPfct8N4",
             "contents": [
                 {   // this is photo #0         NOTE: this entry is not shown, the website only uses the 'src' for the thumbnail of the video
-                    "src": "assets/photos/_1370407.jpg",
+                    "src": "assets/photos/1370407.jpg",
                 },
             ]
         }
@@ -70,14 +70,14 @@ var TEMPLATE_DB = {
                 {   // this is photo #0
                     "title": "hdksjugfbdxhjkgbld",              // title obv
                     "description": "the planes be flying",      // description obv
-                    "src": "assets/photos/_1230004.jpg",    // path to the image file starting with assets/   also if this is going to be a youtube video, you want this path to go to what image you want for the thumbnail (the thumbnail MUST be landscape 3:2 aspect ratio)
+                    "src": "assets/photos/1230004.jpg",    // path to the image file starting with assets/   also if this is going to be a youtube video, you want this path to go to what image you want for the thumbnail (the thumbnail MUST be landscape 3:2 aspect ratio)
                     "youtube": false                            // if you want it to be a youtube video, again, replace 'false' with the video link, surrounded in double quotes.
                 },
 
                 {   // this is photo #1   (example of a youtube video)
                     "title": "hdksjugfbdxhjkgbld",
                     "description": "the planes be flying",
-                    "src": "assets/photos/_1370407.jpg",                    // the thumbnail should be your photo of the cat
+                    "src": "assets/photos/1370407.jpg",                    // the thumbnail should be your photo of the cat
                     "youtube": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"    // link to youtube video
                 }   
 
@@ -93,7 +93,7 @@ var TEMPLATE_DB = {
             "contents": [
 
                 {   // this is photo #0         NOTE: this entry is not shown, the website only uses the 'src' for the thumbnail of the video
-                    "src": "assets/photos/_1370407.jpg",
+                    "src": "assets/photos/1370407.jpg",
                 },
             ]
         }
